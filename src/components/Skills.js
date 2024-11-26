@@ -1,10 +1,6 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-//import Pie from "Percentage_Pie";
+import Pie from "./Percentage_Pie";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
   const responsive = {
@@ -26,7 +22,7 @@ export const Skills = () => {
       items: 1
     }
   };
-  
+
 
   return (
     <section className="skill" id="skills">
@@ -35,29 +31,37 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>My skill set spans a diverse range of technologies and tools, reflecting my ability to adapt and excel in dynamic environments. From designing and developing efficient software solutions to collaborating on innovative projects, I bring a strong foundation in programming languages, frameworks, and problem-solving. Below, you'll find a breakdown of the technical expertise and tools I've mastered, showcasing the capabilities I bring to every project. </p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <Pie percentage={70} color="purple" />
                                 <h5>.NET Framework</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <Pie percentage={70} color="purple" />
+                                <h5>AWS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <Pie percentage={70} color="purple" />
+                                <h5>React Framework</h5>
+                            </div>
+                            <div className="item">
+                                <Pie percentage={70} color="purple" />
+                                <h5>TypeScript</h5>
+                            </div>
+                            <div className="item">
+                                <Pie percentage={70} color="purple" />
+                                <h5>Embedded Systems</h5>
+                            </div>
+                            <div className="item">
+                                <Pie percentage={70} color="purple" />
+                                <h5>Node.js</h5>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   )
 }

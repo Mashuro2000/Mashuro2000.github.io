@@ -1,3 +1,5 @@
+import React from "react";
+
 const cleanPercentage = (percentage) => {
   const isNegativeOrNaN = !Number.isFinite(+percentage) || percentage < 0; // we can set non-numbers to 0 here
   const isTooHigh = percentage > 100;
@@ -49,3 +51,5 @@ const Pie = ({ percentage, colour }) => {
   );
 };
 
+
+export default Pie;
