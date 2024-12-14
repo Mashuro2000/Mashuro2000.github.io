@@ -547,11 +547,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 50px 0 25px 0;
+  padding: 25px 0 25px 0;
+  margin-top: 50px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
+  background-color: #666;
+  position: fixed;
   left:0;
   bottom:0;
   right:0;
@@ -633,6 +635,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 #link {
   text-decoration: none;
+  color: white;
 }
 
 #nav-bar {
@@ -651,5 +654,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .radio {
   display: none;
+}
+
+.project {
+  text-align: center;
 }
 

@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Software Engineer", "Full-stack Developer", "Web Developer" ];
+  const toRotate = [ "Software Engineer", "Full-Stack Developer", "Web Developer" ];
   const period = 1000;
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(100);
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
@@ -66,7 +66,7 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) =>
+              {() =>
                 <div >
                   <img src={headerImg} alt="Header Img"/>
                 </div>}

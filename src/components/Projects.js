@@ -1,38 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import sentiment_analyser_img from "../assets/img/twitters.png";
-import volcano_web_app_img from "../assets/img/Volcano.png";
-import music_recommendation_image from "../assets/img/music.png";
-import luminosity_sensor_image from "../assets/img/luminosity_sensor.png"
+import { projects } from "../data/projects";
+import { Link } from 'react-router-dom';
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 
-
 export const Projects = () => {
-
-  const projects = [
-    {
-      title: "Twitter Sentiment Analyser",
-      description: "This app analyzes user-searched topics to provide overall sentiment insights and displays the data through graphs. It also checks tweet spelling accuracy to enhance analysis reliability, helping users understand public sentiment on various topics.",
-      imgUrl: sentiment_analyser_img,
-    },
-    {
-      title: "Music Recommendation Web App",
-      description: "This mashup service is designed to help users find information about their favorite artists as well as help them find artists similar their search query. The user can search for an artist and the web application will provide them with upcoming events the artists has as well as their most popular music videos. It will do the same thing with artists like the one searched.",
-      imgUrl: music_recommendation_image,
-    },
-    {
-      title: "Luminosity Sensor",
-      description: "This prototype functions as a luminosity sensor, measuring brightness in lux and displaying it on an LCD screen. It adjusts an LED's brightness based on light levels. Two switches control data recording and LED functionality, with interrupt-based debouncing to ensure precision. A timer module provides serial output of luminosity data and timestamps.",
-      imgUrl: luminosity_sensor_image,
-    },
-    {
-      title: "Volcano Data Web App",
-      description: "This app provides detailed information on 1,343 volcanoes using data from the Smithsonian Global Volcanism Program. Users can search by country, view volcano locations on a map, and access metrics like elevation and last eruption. Registered users can log in to see additional data, including population density near each volcano",
-      imgUrl: volcano_web_app_img,
-    },
-  ];
-
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -77,16 +50,13 @@ export const Projects = () => {
                       <Tab.Pane eventKey="first">
                         <p>Throughout my journey as a software engineer, I've had the incredible opportunity to work on a variety of exciting projects—both professionally and during my time at university.
                           Below, you'll find a curated showcase of some of the work I'm most proud to share. Each project reflects my passion for problem-solving, innovation, and crafting efficient solutions.</p>
-                        <div id="center">
-                          <Row >
+                        <div>
+                          <Row>
                             {
                               projects.map((project, index) => {
                                 return (
-                                  <ProjectCard
-                                    key={index}
-                                    {...project}
-                                  />
-                                )
+                                    <ProjectCard key={index} {...project} />
+                                );
                               })
                             }
                           </Row>
@@ -104,7 +74,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      
+
     </section>
   )
 }
