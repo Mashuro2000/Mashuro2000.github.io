@@ -1,7 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import { projects } from "../data/projects";
-import { Link } from 'react-router-dom';
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 
@@ -52,13 +51,11 @@ export const Projects = () => {
                           Below, you'll find a curated showcase of some of the work I'm most proud to share. Each project reflects my passion for problem-solving, innovation, and crafting efficient solutions.</p>
                         <div>
                           <Row>
-                            {
-                              projects.map((project, index) => {
-                                return (
-                                    <ProjectCard key={index} {...project} />
-                                );
-                              })
-                            }
+                            {projects.map((project, index) => {
+                              return (
+                                <ProjectCard key={index} {...project} />
+                              );
+                            })}
                           </Row>
                         </div>
                       </Tab.Pane>
@@ -66,6 +63,7 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>As a music I love to talk and discuss music opinions. Here I've compiled some of my favourite albums of all time. I'm very much into Hip-Hop and always loved how artists are able to tell such captivating stories through their songs. I've also found it very cool how producers are able to sample different songs and create a whole new atmosphere to their song whilst also paying respect to the past. These albums below have always stuck with me because they do exatly that at such a high level.</p>
+                      
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

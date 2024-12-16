@@ -19,24 +19,35 @@ export const Project = () => {
     return (
         <div className='project'>
             {/* The logo and header */}
-            <div>
-                <img></img>
-                <h1>{project.title}</h1>
+            <div className='logo-header'>
+                <img className='logo-project' src={project.logo} />
+                <h1 className='title-project'>{project.title}</h1>
             </div>
 
-            {/* The tech stack */}
-            <div>
+            <div className='project-body'>
+                {/* The tech stack */}
+                <div className='sidebar'>
+                    <h2>The Tech Stack Used</h2>
+                    <ul>
+                        {project.tech_stack.map((tech, index) => (
+                            <li key={index}>{tech}</li> // Use map to create a list item for each tech
+                        ))}
+                    </ul>
+                    <h2>What I Learnt</h2>
+                    <p>{project.learnt}</p>
+                </div>
+                
+                <div className='photo-description'>
+                    {/* Photos */}
+                    <div>
 
-            </div>
+                    </div>
 
-            {/* Photos */}
-            <div>
-
-            </div>
-
-            {/* The description */}
-            <div>
-                <p>{project.description}</p>
+                    {/* The description */}
+                    <div className='project-description'>
+                        <p>{project.description}</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
