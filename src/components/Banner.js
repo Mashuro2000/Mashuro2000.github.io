@@ -54,7 +54,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               <div>
-                <span className="tagline">Welcome to my Portfolio</span>
+                <span className="tagline">Test Change</span>
                 <h1>{`Hi! I'm Martin.`} <span className="txt-rotate" dataPeriod="50" data-rotate='[ "Software Engineer", "Web Designer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Hi, welcome to my personal website! I made this using the React Framework, and used Tailwind CSS for the styling. A bit more about me though, I am a software engineer with a passion for front-end design and artificial intelligence. I studied Computer and Software Systems at QUT, where I honed my technical skills and developed a love for crafting intuitive, user-friendly applications. 
                      Beyond code, I find inspiration in hip-hop music, and when I'm not in front of a computer, you can often find me rock climbing. Both coding and climbing keep me engaged, focused, and always striving for the next challenge!</p>
