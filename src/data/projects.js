@@ -1,4 +1,4 @@
-import sentiment_analyser_img from "../assets/img/twitters.png";
+import sentiment_analyser_img from "../assets/img/twitter_sentiment_analyser/twitters.png";
 import volcano_web_app_img from "../assets/img/Volcano.png";
 import music_recommendation_image from "../assets/img/music.png";
 import luminosity_sensor_image from "../assets/img/luminosity_sensor.png"
@@ -12,7 +12,7 @@ export const projects = [
         description: "This app analyzes user-searched topics to provide overall sentiment insights and displays the data through graphs. It also checks tweet spelling accuracy to enhance analysis reliability, helping users understand public sentiment on various topics.",
         imgUrl: sentiment_analyser_img,
         logo: logo_x,
-        tech_stack: ["JavaScript", "Node.js", "Amazon Web Services (EC2 instance)", "Python", "CSS" ],
+        tech_stack: ["React", "JavaScript", "Twitter API", "Node.js", "Amazon Web Services (EC2 instance)", "Python", "HTML/CSS", "Docker" ],
         learnt: "I how to fuck bitches and get money"
     },
     {
@@ -21,7 +21,7 @@ export const projects = [
         description: "This mashup service is designed to help users find information about their favorite artists as well as help them find artists similar their search query. The user can search for an artist and the web application will provide them with upcoming events the artists has as well as their most popular music videos. It will do the same thing with artists like the one searched.",
         imgUrl: music_recommendation_image,
         logo: logo_music,
-        tech_stack: ["JavaScript", "Node.js", "Amazon Web Services (EC2 instance)", "Python", "CSS" ],
+        tech_stack: ["React", "JavaScript", "YouTube API", "TasteDive API", "SeatGeek Platform API", "Node.js", "Amazon Web Services (EC2 instance)", "HTML/CSS", "Docker"],
         learnt: "I how to fuck bitches and get money"
     },
     {

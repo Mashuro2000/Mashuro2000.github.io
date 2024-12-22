@@ -40,7 +40,7 @@ export const Project = () => {
                 <div className='photo-description'>
                     {/* Photos */}
                     <div>
-
+                        
                     </div>
 
                     {/* The description */}
