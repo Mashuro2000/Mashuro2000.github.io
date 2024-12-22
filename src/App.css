@@ -127,6 +127,24 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   opacity: 0.75;
 }
 
+.navbar-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+.navbar-link:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
@@ -468,6 +486,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project .nav.nav-pills .nav-link.active {
   border: 1px solid rgba(255, 255, 255, 1);
 }
+
 
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -844,3 +863,47 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: left;
 }
 
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+  transform-style: preserve-3d;
+}
+
+.album-image {
+  flex: 1;
+  aspect-ratio: 1 / 1.5;
+  cursor: pointer;
+  pointer-events: auto;
+  -webkit-box-reflect: below 4px linear-gradient(transparent, rgba(0, 0, 0, 0.15));
+  transition: 0.4s;
+}
+
+.album-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1.5;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.album-image:hover {
+  transform: scale(1.2);
+}
+
+.gallery:hover > :not(:hover) {
+  margin-inline: -1.5rem;
+  transform: perspective(400px) rotateY(30deg) scale(0.8)
+}
+
+.album-image:hover ~ .album-image {
+  transform: perspective(400px) rotateY(-30deg) scale(0.8)
+}
+
+.logo img {
+  max-width: 35%;
+}
+
+.logo p{
+  color: rgb(226, 226, 226);
+}

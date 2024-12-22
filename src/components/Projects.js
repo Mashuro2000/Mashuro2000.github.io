@@ -4,6 +4,12 @@ import { projects } from "../data/projects";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 
+import manOnTheMoon from "../assets/img/manonthemoon.jpg"
+import thriller from "../assets/img/thriller.jpg"
+import tcd from "../assets/img/TDC.jpg"
+import goodKid from "../assets/img/goodkid.jpg"
+import discovery from "../assets/img/discovery.jpg"
+
 export const Projects = () => {
   const responsive = {
     superLargeDesktop: {
@@ -36,13 +42,13 @@ export const Projects = () => {
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Projects</Nav.Link>
+                        <Nav.Link style={{ cursor: 'pointer' }} eventKey="first">Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Hobbies</Nav.Link>
+                        <Nav.Link style={{ cursor: 'pointer' }} eventKey="second">Hobbies</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Interests</Nav.Link>
+                        <Nav.Link style={{ cursor: 'pointer' }} eventKey="third">Interests</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp">
@@ -63,7 +69,15 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>As a music I love to talk and discuss music opinions. Here I've compiled some of my favourite albums of all time. I'm very much into Hip-Hop and always loved how artists are able to tell such captivating stories through their songs. I've also found it very cool how producers are able to sample different songs and create a whole new atmosphere to their song whilst also paying respect to the past. These albums below have always stuck with me because they do exatly that at such a high level.</p>
-                      
+                        <div className="album-wrapper">
+                          <div className="gallery">
+                            <div className="album-image"><img src={tcd} /></div>
+                            <div className="album-image"><img src={manOnTheMoon} /></div>
+                            <div className="album-image"><img src={goodKid} /></div>
+                            <div className="album-image"><img src={thriller} /></div>
+                            <div className="album-image"><img src={discovery} /></div>
+                          </div>
+                        </div>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
