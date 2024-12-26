@@ -13,7 +13,7 @@ export const projects = [
         imgUrl: sentiment_analyser_img,
         logo: logo_x,
         tech_stack: ["React", "JavaScript", "Twitter API", "Node.js", "Amazon Web Services (EC2 instance)", "Python", "HTML/CSS", "Docker", "Bootstrap" ],
-        learnt: "I how to fuck bitches and get money"
+        learnt: " "
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ export const projects = [
         imgUrl: music_recommendation_image,
         logo: logo_music,
         tech_stack: ["React", "JavaScript", "YouTube API", "TasteDive API", "SeatGeek Platform API", "Node.js", "Amazon Web Services (EC2 instance)", "HTML/CSS", "Docker"],
-        learnt: "I how to fuck bitches and get money"
+        learnt: " "
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ export const projects = [
         imgUrl: luminosity_sensor_image,
         logo: logo_x,
         tech_stack: ["C", "BH1750 (Luminosity Sensor)", "Arduino", "Nokia 5110 LCD" ],
-        learnt: "I how to fuck bitches and get money"
+        learnt: " "
     },
     {
         id: 4,
@@ -40,6 +40,6 @@ export const projects = [
         imgUrl: volcano_web_app_img,
         logo: logo_x,
         tech_stack: ["JavaScript", "Node.js", "REST APIs", "Python", "CSS" ],
-        learnt: "I how to fuck bitches and get money"
+        learnt: " "
     },
 ];
