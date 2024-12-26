@@ -45,7 +45,8 @@ export const Project = () => {
 
                     {/* The description */}
                     <div className='project-description'>
-                        <p>{project.description}</p>
+                        <h3>Description</h3>
+                        <h3>{project.description}</h3>
                     </div>
                 </div>
             </div>

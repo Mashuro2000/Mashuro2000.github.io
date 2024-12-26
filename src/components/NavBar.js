@@ -16,7 +16,7 @@ export const NavBar = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 20) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -44,6 +44,7 @@ export const NavBar = () => {
       <Container>
         <Navbar.Brand className="logo" href="/">
           <img src={headerImg} alt="Logo" />
+          <p>Martin Mashuro</p>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>

@@ -17,6 +17,21 @@
   font-weight: 400;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 7px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -293,11 +308,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgb(18, 18, 18) 100%), url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.welcome-text {
+  border: rgba(21, 21, 21, 0);
+  border-radius: 50px;
+  border-style: solid;
+  padding: 40px;
+  background-color: rgba(21, 21, 21, 0.5);
 }
 
 .banner .tagline {
@@ -371,6 +394,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+.txt-rotate {
+  display: inline-block; /* Ensures it doesn't affect surrounding elements */
+}
+
+@media (max-width: 768px) {
+  .txt-rotate {
+    height: 1.2em; /* Slightly smaller height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-text h1 {
+    font-size: 30px;
+  }
+}
+
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
@@ -420,6 +460,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Projects Css ************/
 .project {
   padding: 40px 0;
+  padding-bottom: 200px;
   position: relative;
   background: linear-gradient(to bottom, rgb(18, 18, 18) 0%, rgba(255, 255, 255, 0) 100%);
 }
@@ -893,17 +934,105 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .gallery:hover > :not(:hover) {
   margin-inline: -1.5rem;
-  transform: perspective(400px) rotateY(30deg) scale(0.8)
+  transform: perspective(600px) rotateY(20deg) scale(0.9)
 }
 
 .album-image:hover ~ .album-image {
-  transform: perspective(400px) rotateY(-30deg) scale(0.8)
+  transform: perspective(600px) rotateY(-20deg) scale(0.9)
+}
+
+.logo {
+  display: flex;
+  align-items: center; 
+  gap: 15px; 
 }
 
 .logo img {
+  width: auto;
   max-width: 35%;
 }
 
-.logo p{
+.logo p {
+  margin: 0; /* Remove any default margin from the <p> tag */
   color: rgb(226, 226, 226);
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 130%;
+  }  
+}
+
+#text-alignment {
+  text-align:left;
+  text-justify: inter-word;
+}
+
+.portrait-image {
+  padding-top: 110px;
+}
+
+@media (max-width: 768px) {
+  .portrait-image {
+    padding-top: 45px;
+    margin-left: 150px;
+    max-width: 110%;
+  }
+}
+
+.skill-box {
+  width: 150px;
+}
+
+.album-container {
+  position: relative;
+  width: 100%;
+}
+
+.album-card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.album-overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(21, 21, 21, 0.7);
+  width: 100%;
+  height:0;
+  overflow: scroll;
+  transition: .5s ease;
+}
+
+.album-container:hover .album-overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.album-text {
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.album-text span {
+  color: white;
+  text-align: justify;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.album-text p {
+  color: white;
+  text-align: justify;
+  font-size: 10px;
+  padding-left: 20px;
+}
+
+#album-title {
+  font-size: 20px;
 }

@@ -45,9 +45,9 @@ export const Skills = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn">
+            <div className='skill-bx wow zoomIn'>
               <h2>Skills</h2>
-              <p>My skill set spans a diverse range of technologies and tools, reflecting my ability to adapt and excel in dynamic environments. From designing and developing efficient software solutions to collaborating on innovative projects, I bring a strong foundation in programming languages, frameworks, and problem-solving. Below, you'll find a breakdown of the technical expertise and tools I've mastered, showcasing the capabilities I bring to every project. </p>
+              <p id='text-alignment'>My skill set spans a diverse range of technologies and tools, reflecting my ability to adapt and excel in dynamic environments. From designing and developing efficient software solutions to collaborating on innovative projects, I bring a strong foundation in programming languages, frameworks, and problem-solving. Below, you'll find a breakdown of the technical expertise and tools I've mastered, showcasing the capabilities I bring to every project. </p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
 
                 {skills.map(({ skill, percentage, image}, index) => (
