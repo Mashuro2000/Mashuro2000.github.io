@@ -471,15 +471,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 
-.project p {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
-}
+
 
 .project .nav.nav-pills {
   width: 72%;
@@ -814,10 +806,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: none;
 }
 
-.project {
-  text-align: left;
-}
-
 .logo-header img {
   width: 5%;
 }
@@ -855,9 +843,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .sidebar {
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 300px;
   margin-top: 25px;
   border-radius: 20px;
   background-color: rgba(255, 0, 0, 0);
@@ -909,7 +895,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   gap: 0.25rem;
   transform-style: preserve-3d;
-}
+} 
 
 .album-image {
   flex: 1;
@@ -1035,4 +1021,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 #album-title {
   font-size: 20px;
+}
+
+.project p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: left;
+  width: 59%;
+}
+
+.experience-title-logo {
+  display: flex;
+  align-items: center; 
+  gap: 15px; 
+  margin-bottom: 15px;
+}
+
+.experience img {
+  max-width: 3%;
 }

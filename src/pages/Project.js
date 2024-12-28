@@ -30,7 +30,7 @@ export const Project = () => {
                     <h2>The Tech Stack Used</h2>
                     <ul>
                         {project.tech_stack.map((tech, index) => (
-                            <li key={index}>{tech}</li> // Use map to create a list item for each tech
+                            <li key={index}>{tech}</li> 
                         ))}
                     </ul>
                     <h2>What I Learnt</h2>
@@ -46,7 +46,7 @@ export const Project = () => {
                     {/* The description */}
                     <div className='project-description'>
                         <h3>Description</h3>
-                        <h3>{project.description}</h3>
+                        <p>{project.description}</p>
                     </div>
                 </div>
             </div>

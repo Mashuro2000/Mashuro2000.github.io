@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import { projects } from "../data/projects";
 import { AlbumCard } from "./AlbumCard";
 import { albums } from "../data/albums";
+import { experience } from "../data/experience";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 
@@ -43,10 +44,21 @@ export const Projects = () => {
                         </div>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p id="text-alignment">
-                            My engineering journey began with a Bachelor's degree from QUT, where I built a solid foundation in computer and software systems. This education, combined with my professional experience at Wabtec, has equipped me with a deep understanding of full-stack development, particularly within the .NET environment and WPF, allowing me to create efficient and impactful applications.<br/><br/>
-                            Shifting from a successful career as a top-performing sales consultant to software engineering, I've carried forward a customer-focused mindset. This ensures that the software I help develop is not only technically robust but also tailored to meet user needs. By blending my expertise in sales and engineering, I am driven to innovate and create technology that delivers meaningful impact. Below you will see the work experience I have gained over the past few years.
-                        </p>
+                        {experience.map(({title, tenure, company, jobDescription, image}, index) => (
+                          <div className="experience">
+                            <div className="experience-title-logo">
+                              <h3>{title}</h3>
+                              <img src={image}/>
+                            </div>
+                            <h4>{company} | {tenure}</h4>
+                            <ul>
+                              {jobDescription.map((description, index) => (
+                                <li key={index}>{description}</li>
+                              ))}
+                            </ul>
+                            <br/>
+                          </div>
+                        ))}
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p id="text-alignment">As a music I love to talk and discuss music opinions. Here I've compiled some of my favourite albums of all time. I'm very much into Hip-Hop and always loved how artists are able to tell such captivating stories through their songs. I've also found it very cool how producers are able to sample different songs and create a whole new atmosphere to their song whilst also paying respect to the past. These albums below have always stuck with me because they do exatly that at such a high level.</p>

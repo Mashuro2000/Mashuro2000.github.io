@@ -1,9 +1,16 @@
+// volcano api web app
+import volcano_web_app_img from "../assets/img/volcano data web app/Volcano.png";
+
+// music recommendation
+import logo_music from "../assets/img/music recommendation web app/music-notes.png"
+import music_recommendation_image from "../assets/img/music recommendation web app/music.png";
+
+// luminosity sensor
+import luminosity_sensor_image from "../assets/img/luminosity sensor/luminosity_sensor.png"
+
+// twitter/x sentiment analyser 
+import logo_x from "../assets/img/twitter_sentiment_analyser/x.png"
 import sentiment_analyser_img from "../assets/img/twitter_sentiment_analyser/twitters.png";
-import volcano_web_app_img from "../assets/img/Volcano.png";
-import music_recommendation_image from "../assets/img/music.png";
-import luminosity_sensor_image from "../assets/img/luminosity_sensor.png"
-import logo_x from "../assets/img/x.png"
-import logo_music from "../assets/img/music-notes.png"
 
 export const projects = [
     {
