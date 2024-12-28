@@ -3,7 +3,10 @@ import volcano_web_app_img from "../assets/img/volcano data web app/Volcano.png"
 
 // music recommendation
 import logo_music from "../assets/img/music recommendation web app/music-notes.png"
-import music_recommendation_image from "../assets/img/music recommendation web app/music.png";
+import music_recommendation_image_1 from "../assets/img/music recommendation web app/music2.png";
+import music_recommendation_image_2 from "../assets/img/music recommendation web app/music1.png";
+import music_recommendation_image_3 from "../assets/img/music recommendation web app/music3.png";
+import music_recommendation_image_4 from "../assets/img/music recommendation web app/music4.png";
 
 // luminosity sensor
 import luminosity_sensor_image from "../assets/img/luminosity sensor/luminosity_sensor.png"
@@ -20,16 +23,16 @@ export const projects = [
         imgUrl: sentiment_analyser_img,
         logo: logo_x,
         tech_stack: ["React", "JavaScript", "Twitter API", "Node.js", "Amazon Web Services (EC2 instance)", "Python", "HTML/CSS", "Docker", "Bootstrap" ],
-        learnt: " "
+        images: []
     },
     {
         id: 2,
         title: "Music Recommendation Web App",
         description: "This mashup service is designed to help users find information about their favorite artists as well as help them find artists similar their search query. The user can search for an artist and the web application will provide them with upcoming events the artists has as well as their most popular music videos. It will do the same thing with artists like the one searched. The application was hosted as a Docker image on an EC2 instance on AWS.",
-        imgUrl: music_recommendation_image,
+        imgUrl: music_recommendation_image_4,
         logo: logo_music,
         tech_stack: ["React", "JavaScript", "YouTube API", "TasteDive API", "SeatGeek Platform API", "Node.js", "Amazon Web Services (EC2 instance)", "HTML/CSS", "Docker"],
-        learnt: " "
+        images: [music_recommendation_image_1, music_recommendation_image_2, music_recommendation_image_3, music_recommendation_image_4]
     },
     {
         id: 3,

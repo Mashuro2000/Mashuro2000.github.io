@@ -467,7 +467,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project h2 {
   font-size: 45px;
-  font-weight: 700;
   text-align: center;
 }
 
@@ -818,13 +817,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 
-.logo-header img {
-  position: absolute;
-  left: 310px;
-  max-width: 50px;
-  height: auto;
-}
-
 .logo-header h1 {
   margin: 0;
 }
@@ -854,41 +846,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 10px;
 }
 
-.sidebar h2 {
-  font-weight: normal;
-  font-size: 40px;
-}
-
-.sidebar p {
-  text-align: left;
-  /* font-family: 'Centra', sans-serif !important; */
-  color: #fff !important;
-  font-size: 16px;
-  margin-left: 20px;
-}
-
-.project-body {
-  padding-top: 40px;
-  width: 100%;
-  display: grid;
-  grid:
-  "sidebar body" 1fr
-  / 35% 40%;
-
-  gap: 0px;
-}
-
-.sidebar {
-  grid-area: sidebar;
-}
-
-.body {
-  grid-area: body;
-}
-
-.project-description p{
-  text-align: left;
-}
 
 .gallery {
   display: flex;
@@ -1023,13 +980,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
 }
 
-.project p {
-  color: #B8B8B8;
+.project {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: left;
+}
+
+.project p {
+  margin: 14px auto 30px auto;
   width: 59%;
 }
 
@@ -1042,4 +1002,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .experience img {
   max-width: 3%;
+}
+
+.tech-stack {
+  width: 60%; 
+  text-align: left;
+  margin: 14px auto 30px auto;
+}
+
+.tech-stack h2 {
+  text-align: left;
+  margin: 14px auto 30px auto;
+}
+
+.project-description h2 {
+  width: 59.5%;
+  text-align: left;
+  margin: 14px auto 30px auto;
+}
+
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.collage-cell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Adjust the value as needed */
+}
+
+.collage-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collage-cell:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

@@ -2,10 +2,12 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
 import { Link } from 'react-router-dom';
+import ImageCollage from "../components/imagecollage";
 
 export const Project = () => {
     const { id } = useParams(); // Get the dynamic ID from the URL
     const project = projects.find((proj) => proj.id === parseInt(id));
+
 
     if (!project) {
         return (
@@ -20,35 +22,29 @@ export const Project = () => {
         <div className='project'>
             {/* The logo and header */}
             <div className='logo-header'>
-                <img className='logo-project' src={project.logo} />
                 <h1 className='title-project'>{project.title}</h1>
             </div>
 
-            <div className='project-body'>
-                {/* The tech stack */}
-                <div className='sidebar'>
-                    <h2>The Tech Stack Used</h2>
-                    <ul>
-                        {project.tech_stack.map((tech, index) => (
-                            <li key={index}>{tech}</li> 
-                        ))}
-                    </ul>
-                    <h2>What I Learnt</h2>
-                    <p>{project.learnt}</p>
-                </div>
-                
-                <div className='photo-description'>
-                    {/* Photos */}
-                    <div>
-                        
-                    </div>
+            {/* Photos */}
+            <div>
+                <ImageCollage className='image-wrapper'images={project.images}/>
+            </div>
 
-                    {/* The description */}
-                    <div className='project-description'>
-                        <h3>Description</h3>
-                        <p>{project.description}</p>
-                    </div>
-                </div>
+            {/* The description */}
+            <div className='project-description'>
+                <h2>Description</h2>
+                <p>{project.description}</p>
+            </div>
+
+          
+            {/* The tech stack */}
+            <div className='tech-stack'>
+                <h2>The Tech Stack Used</h2>
+                <ul>
+                    {project.tech_stack.map((tech, index) => (
+                        <li key={index}>{tech}</li> 
+                    ))}
+                </ul>
             </div>
         </div>
     );
