@@ -10,6 +10,7 @@ import atom from '../assets/img/atom.png';
 import tailwind from '../assets/img/tailwind.png';
 import aws from '../assets/img/AWS.png';
 import typescript from '../assets/img/TypeScript.png';
+import python from '../assets/img/Python.png'
 
 export const Skills = () => {
   const responsive = {
@@ -38,6 +39,7 @@ export const Skills = () => {
     { skill: 'Tailwind CSS', percentage: 70, image: tailwind},
     { skill: 'AWS', percentage: 60, image: aws},
     { skill: 'TypeScript', percentage: 80, image: typescript},
+    { skill: 'Python', percentage: 70, image: python }
   ]
 
   return (
