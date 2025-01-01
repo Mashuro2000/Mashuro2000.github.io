@@ -1049,3 +1049,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: scale(1.2);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+#GoHome {
+  background-color: #666;
+  text-decoration: none;
+  color: #FFFFFF;
+  border-radius: 25px;
+  padding: 15px;
+  width: 50%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#GoHome:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+

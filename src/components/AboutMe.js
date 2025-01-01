@@ -7,7 +7,7 @@ import { experience } from "../data/experience";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 
-export const Projects = () => {
+export const AboutMe = () => {
   return (
     <section className="project" id="projects">
       <Container>
@@ -61,7 +61,7 @@ export const Projects = () => {
                         ))}
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p id="text-alignment">As a music I love to talk and discuss music opinions. Here I've compiled some of my favourite albums of all time. I'm very much into Hip-Hop and always loved how artists are able to tell such captivating stories through their songs. I've also found it very cool how producers are able to sample different songs and create a whole new atmosphere to their song whilst also paying respect to the past. These albums below have always stuck with me because they do exatly that at such a high level.</p>
+                        <p id="text-alignment">As a music lover I'm always interested to talk and discuss music opinions. Here I've compiled some of my favourite albums of all time. I'm very much into Hip-Hop and always loved how artists are able to tell such captivating stories through their songs. I've also found it very cool how producers are able to sample different songs and create a whole new atmosphere to their song whilst also paying respect to the past. These albums below have always stuck with me because they do exatly that at such a high level.</p>
                         <div className="album-wrapper">
                           <div className="gallery">
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Banner } from "../components/Banner";
 import { Skills } from "../components/Skills";
-import { Projects } from "../components/Projects";
+import { AboutMe } from "../components/AboutMe";
 import { Element } from 'react-scroll';
 
 export const Home = () => {
@@ -21,7 +21,7 @@ export const Home = () => {
 
       <Element name='aboutMe'>
         <section>
-          <Projects />
+          <AboutMe />
         </section>
       </Element>
     </div>
