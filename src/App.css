@@ -395,7 +395,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .txt-rotate {
-  display: inline-block; /* Ensures it doesn't affect surrounding elements */
+  display: inline-block; 
+  font-size: 45px;
 }
 
 @media (max-width: 768px) {

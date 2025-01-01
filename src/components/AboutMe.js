@@ -88,7 +88,6 @@ export const AboutMe = () => {
           </Col>
         </Row>
       </Container>
-
     </section>
   )
 }
