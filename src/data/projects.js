@@ -41,7 +41,7 @@ export const projects = [
         imgUrl: luminosity_sensor_image,
         logo: logo_x,
         tech_stack: ["C", "BH1750 (Luminosity Sensor)", "Arduino", "Nokia 5110 LCD" ],
-        learnt: " "
+        images: []
     },
     {
         id: 4,
@@ -50,6 +50,6 @@ export const projects = [
         imgUrl: volcano_web_app_img,
         logo: logo_x,
         tech_stack: ["JavaScript", "Node.js", "REST APIs", "Python", "CSS" ],
-        learnt: " "
+        images: []
     },
 ];
