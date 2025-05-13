@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { projects } from '../data/projects';
 import { Link } from 'react-router-dom';
 import ImageCollage from "../components/imagecollage";
+import GithubButton from "../components/GithubButton";
 
 export const Project = () => {
     const { id } = useParams(); 
@@ -30,6 +31,9 @@ export const Project = () => {
             <div className='project-description'>
                 <h2>Description</h2>
                 <p>{project.description}</p>
+                <div className='github-button-container'>
+                    {project.githubUrl && <GithubButton url={project.githubUrl} />}
+                </div>
             </div>
 
             <div className='tech-stack'>

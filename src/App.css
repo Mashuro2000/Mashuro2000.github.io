@@ -542,6 +542,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
   cursor: default;
+  aspect-ratio: 16/9;
+}
+
+.proj-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .proj-imgbx::before {
@@ -992,6 +999,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project p {
   margin: 14px auto 30px auto;
   width: 59%;
+  white-space: pre-line;
 }
 
 .experience-title-logo {
@@ -1014,6 +1022,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .tech-stack h2 {
   text-align: left;
   margin: 14px auto 30px auto;
+}
+
+.tech-stack ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-stack li {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-stack li:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+  .tech-stack ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack ul {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-description h2 {
@@ -1066,5 +1107,127 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 #GoHome:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-image-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+}
+
+@media (max-width: 768px) {
+    .carousel-image-container {
+        height: 300px;
+    }
+    
+    .carousel-button {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #24292e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+.github-button:hover {
+    background: #2f363d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.github-icon {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+.github-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 

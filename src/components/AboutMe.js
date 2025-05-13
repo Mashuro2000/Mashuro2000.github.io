@@ -4,6 +4,7 @@ import { projects } from "../data/projects";
 import { AlbumCard } from "./AlbumCard";
 import { albums } from "../data/albums";
 import { experience } from "../data/experience";
+import { ExperienceTimeline } from "./ExperienceTimeline";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 
@@ -44,21 +45,9 @@ export const AboutMe = () => {
                         </div>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        {experience.map(({title, tenure, company, jobDescription, image}, index) => (
-                          <div className="experience">
-                            <div className="experience-title-logo">
-                              <h3>{title}</h3>
-                              <img src={image}/>
-                            </div>
-                            <h4>{company} | {tenure}</h4>
-                            <ul>
-                              {jobDescription.map((description, index) => (
-                                <li key={index}>{description}</li>
-                              ))}
-                            </ul>
-                            <br/>
-                          </div>
-                        ))}
+                        {/* Pass in experience array */}
+                        {/* That will be the component */}
+                        <ExperienceTimeline experience={experience} />
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p id="text-alignment">As a music lover I'm always interested to talk and discuss music opinions. Here I've compiled some of my favourite albums of all time. I'm very much into Hip-Hop and always loved how artists are able to tell such captivating stories through their songs. I've also found it very cool how producers are able to sample different songs and create a whole new atmosphere to their song whilst also paying respect to the past. These albums below have always stuck with me because they do exatly that at such a high level.</p>
